@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/*body, html { height: 100%;}
+*/
+#pic{
+  position: absolute;
+border-radius:50%;
+  bottom: 250px;
+  right: 635px;
+  width: 250px;
+  
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('bokeh-cover-bg.jpg');
+
+  /* Full height */
+   min-height: 650px;  
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#header{
+  position: absolute;
+  z-index: 1000;
+  top: 500px;
+  left: 570px;
+color:white;
+text-align: center;
+font-size:70px;
+font-family: "Albertus Medium";
+}
+
+.text-box{
+	height: 600px;
+	padding: 50px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;position: fixed;
+width:100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: gray;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#me">Me</a></li>
+  <li><a href="#DevClub">DevClub</a></li>
+  <li style="float:right"><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="#comment">Comment</a></li>
+</ul>
+<div id="home"></div>
+<h1 id="header">Pranjal Singh</h1>
+<img id="pic" src="avataaars.png">
+<div class="parallax"></div>
+
+<div style="height:720px;background-color:pink;font-size:36px;">
+<h2 id="me"  align "center">ME !</h2>
+<img src ="IMG_20180709_120544.jpg" style ="float:right; margin-left:20px;margin-right:20px; width:35%;">
+<p style="font-family:Avant Guard; font-size:80%;">Hello everyone! I am Pranjal Singh, a student of IIT Delhi, currently pursuing my B Tech from Biochemical engineering and Biotechnology.Let me tell you a little about myself. My hometown is Gwalior (m.p.) and i did my schooling till class 10th from Gwalior Glory High School.I took science as my stream in class 11th and hence started preparing for JEE'18 then onwards. I joined Shikhar coaching classes in gwalior which had such a great environment to study. Teachers so caring and supportive , it just felt like home.I used to spent my entire day in the coaching premises, staying back after the classes. I went home only to sleep and next morning the cycle continued.Those were some best days of my life. I completely dedicate my achievement of getting admission into IITD to my teachers and my parents.
+Here I am today, in IITD , one of the most prestigious institution in the country. My experience till now in the college has been a mixed one .There were ups and downs but it has been a thrilling semester in all. I have developed interest in coding in past few months and have decided to learn more in the same field.   </p>
+</div>
+<div style="height:720px;background-color:linen;font-size:36px;">
+<h2 id="DevClub" style ="float:right;" align "center">So why dev club?</h2>
+<img src ="24647729.png" style ="float:left; margin-right:020px;margin-top:100px;margin-left:10px; width:35%;">
+<p style="font-family:Avant Guard; font-size:100%;"><br><br><br>My interests grew in coding and stuff after jee , when I stared to learn C++ on my own but never did a very thorough job. After encountering col100 as a course in first semester my interest in the field grew even more and i started liking the assignments the course offered and enjoyed doing them. I never really got enough time to learn a little more on my own . I know that i have a deep interest in this field and so i wanted to sharpen up my skills to be of some good use. I see devclub as a great opportunity for my self to improve my skills and learn new things in different aspects of this field. This is the most apt club for a person like me, I guess.  </p>
+</div>
+<div id="comment" style="height:300px;background-color:#ccccff;">
+<h1>ADD COMMENT</h1>
+    <table>
+        <tbody>
+             <FORM action="submit.html" method="post">
+                <tr>
+                    <td><LABEL for="name">Name: </LABEL>
+                              <INPUT type="text" id="name"></td>
+                </tr>
+             
+                <tr>
+                    <td><LABEL for="subject">Subject: </LABEL>
+                              <INPUT type="text" id="subject"></td>
+                </tr>
+                <tr>
+                    <td><LABEL for="comment">Text: </LABEL>
+                              <TEXTAREA type="text" id="comment">Comment:</TEXTAREA></td>
+                </tr>
+                <tr>
+                    <td><INPUT type="submit" value="Submit"> <INPUT type="reset"></td>
+                </tr>
+            </FORM>
+        </tbody>
+    </table>
+
+<a id = "contact" href="https://www.facebook.com/profile.php?id=100026236124792"><img src="images.png" width="80" title="fb" alt="FB" style="float:right; margin-right:75px;margin-top:-100px"></a>
+</div>
+</body>
+</html>
